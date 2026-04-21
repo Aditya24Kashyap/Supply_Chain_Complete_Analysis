@@ -161,6 +161,12 @@ Supply-Chain-Analysis/
 ├── supply_chain_analysis.ipynb
 ├── DataCoSupplyChainDataset.csv
 └── images/
+    ├── profitability_pie.png
+    ├── delay_distribution.png
+    ├── profit_vs_delay.png
+    ├── bottleneck_analysis.png
+    ├── root_cause.png
+    └── time_analysis.png
 ```
 
 ---
