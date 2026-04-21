@@ -67,7 +67,8 @@ Created new features:
 ## 📊 Exploratory Data Analysis
 
 ### 🔹 Profitability Distribution
-![Profitability](images/profitability_pie.png)
+![Profitability](https://raw.githubusercontent.com/Aditya24Kashyap/Supply_Chain_Complete_Analysis/main/profitability%20pie.png)
+
 
 - ✅ 80.6% orders are profitable  
 - ❌ 18.7% orders result in loss  
@@ -75,7 +76,7 @@ Created new features:
 ---
 
 ### 🔹 Delay Distribution
-![Delay Distribution](images/delay_distribution.png)
+![Delay Distribution](https://raw.githubusercontent.com/Aditya24Kashyap/Supply_Chain_Complete_Analysis/main/delay%20distribution.png)
 
 - 📊 54.7% orders are delayed  
 - Most common delay: **1 day (~31%)**
@@ -83,7 +84,7 @@ Created new features:
 ---
 
 ### 🔹 Profit vs Delay Analysis
-![Profit vs Delay](images/profit_vs_delay.png)
+![Profit vs Delay](https://raw.githubusercontent.com/Aditya24Kashyap/Supply_Chain_Complete_Analysis/main/profit%20vs%20delay.png)
 
 - 📉 Profit decreases as delay increases  
 - Delays significantly impact revenue  
@@ -91,7 +92,7 @@ Created new features:
 ---
 
 ## 🚧 Bottleneck Detection
-![Bottleneck Analysis](images/bottleneck_analysis.png)
+![Bottleneck Analysis](https://raw.githubusercontent.com/Aditya24Kashyap/Supply_Chain_Complete_Analysis/main/bottleneck%20analysis.png)
 
 Analyzed delays across:
 - Shipping Mode  
@@ -106,7 +107,7 @@ Analyzed delays across:
 ---
 
 ## 🔍 Root Cause Analysis
-![Root Cause Analysis](images/root_cause.png)
+![Root Cause Analysis](https://raw.githubusercontent.com/Aditya24Kashyap/Supply_Chain_Complete_Analysis/main/root%20cause.png)
 
 Top drivers of delay:
 - Inefficient shipping modes  
@@ -116,7 +117,7 @@ Top drivers of delay:
 ---
 
 ## ⏱ Time-Based Analysis
-![Time Analysis](images/time_analysis.png)
+![Time Analysis](https://raw.githubusercontent.com/Aditya24Kashyap/Supply_Chain_Complete_Analysis/main/time%20analysis.png)
 
 - 📅 Peak delays in **Aug–Sep**  
 - 📆 Certain weekdays show higher delays  
