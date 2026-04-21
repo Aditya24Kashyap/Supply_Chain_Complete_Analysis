@@ -1,23 +1,23 @@
-# 📦 Supply Chain Analysis & Delay Prediction
+# 📦 Supply Chain Analysis & Delivery Delay Prediction
 
 ## 🚀 Project Overview
-This project analyzes a real-world supply chain dataset to identify delivery inefficiencies, detect bottlenecks, and predict late deliveries using machine learning.
+This project analyzes a real-world supply chain dataset to identify **delivery delays, operational bottlenecks, and profitability impact**, and builds a **machine learning model** to predict late deliveries.
 
-It demonstrates how data analysts solve business problems using **data cleaning, exploratory data analysis (EDA), visualization, and predictive modeling**.
+It simulates a real business scenario where data is used to improve logistics and decision-making.
 
 ---
 
 ## 🎯 Business Problem
-Late deliveries impact:
-- Customer satisfaction
-- Operational efficiency
-- Profitability
+Late deliveries negatively affect:
+- Customer satisfaction  
+- Operational efficiency  
+- Revenue and profitability  
 
 ### Key Questions:
 - Why are deliveries getting delayed?
 - Which factors contribute most to delays?
 - How do delays affect profit?
-- Can we predict late deliveries?
+- Can we predict late deliveries in advance?
 
 ---
 
@@ -36,25 +36,25 @@ Late deliveries impact:
 - **50+ features**
 
 Includes:
-- Order details
-- Shipping timelines
-- Customer data
-- Product information
-- Profit & sales metrics
+- Order details  
+- Shipping timelines  
+- Customer segments  
+- Product categories  
+- Profit & sales metrics  
 
 ---
 
 ## 🔄 Project Workflow
 
-### 1. Data Cleaning
-- Removed irrelevant and high-missing columns
-- Dropped sensitive fields (email, password, etc.)
-- Converted date columns to datetime
-- Removed canceled orders
+### 1️⃣ Data Cleaning
+- Removed irrelevant & high-missing columns  
+- Dropped sensitive data (email, password, etc.)  
+- Converted date columns to datetime  
+- Removed canceled orders  
 
 ---
 
-### 2. Feature Engineering
+### 2️⃣ Feature Engineering
 Created new features:
 - `Order Processing Time`
 - `Delay`
@@ -64,112 +64,137 @@ Created new features:
 
 ---
 
-### 3. Exploratory Data Analysis (EDA)
+## 📊 Exploratory Data Analysis
 
-#### Key Insights:
-- 📊 **54.7% orders are delayed**
-- 💰 Total Profit: **~7.5M $**
-- ⚠️ Loss due to delays: **~2.1M $**
+### 🔹 Profitability Distribution
+![Profitability](images/profitability_pie.png)
+
+- ✅ 80.6% orders are profitable  
+- ❌ 18.7% orders result in loss  
 
 ---
 
-### 4. Delay Analysis
+### 🔹 Delay Distribution
+![Delay Distribution](images/delay_distribution.png)
+
+- 📊 54.7% orders are delayed  
 - Most common delay: **1 day (~31%)**
-- Maximum delay observed: **4 days**
-- Increasing delay → decreasing profitability
 
 ---
 
-### 5. Bottleneck Detection
+### 🔹 Profit vs Delay Analysis
+![Profit vs Delay](images/profit_vs_delay.png)
+
+- 📉 Profit decreases as delay increases  
+- Delays significantly impact revenue  
+
+---
+
+## 🚧 Bottleneck Detection
+![Bottleneck Analysis](images/bottleneck_analysis.png)
+
 Analyzed delays across:
-- Shipping Mode
-- Customer Segment
-- Order Status
-- Department
-- Region
+- Shipping Mode  
+- Customer Segment  
+- Order Status  
+- Department  
+- Region  
 
-📌 Example:
-- **Home Office segment has highest delay (~55%)**
-
----
-
-### 6. Root Cause Analysis
-Top delay drivers:
-- Shipping mode inefficiencies
-- Order processing status
-- Regional logistics issues
+📌 **Key Insight:**  
+- Home Office segment shows highest delay rate (~55%)
 
 ---
 
-### 7. Time-Based Analysis
-- 📅 Highest delays: **Aug–Sep**
-- 📆 Weekday patterns observed
-- 🕒 Order time affects delivery delays
+## 🔍 Root Cause Analysis
+![Root Cause Analysis](images/root_cause.png)
+
+Top drivers of delay:
+- Inefficient shipping modes  
+- Order status issues (Pending / Processing)  
+- Regional logistics inefficiencies  
 
 ---
 
-### 8. Profitability Analysis
-- ✅ 80.6% orders are profitable
-- ❌ 18.7% orders result in loss
-- Delayed orders significantly increase losses
+## ⏱ Time-Based Analysis
+![Time Analysis](images/time_analysis.png)
+
+- 📅 Peak delays in **Aug–Sep**  
+- 📆 Certain weekdays show higher delays  
+- 🕒 Order hour impacts delivery performance  
 
 ---
 
-### 9. Machine Learning Model
-Built a classification model to predict:
-- **Late Delivery Risk**
+## 🤖 Machine Learning Model
 
-**Target Variable:** `Is_Delayed`
+### Objective:
+Predict **Late Delivery Risk**
 
-#### Outcome:
-- Helps identify high-risk orders
-- Enables proactive decision-making
+- Target Variable: `Is_Delayed`  
+- Model Type: Classification  
+
+### Outcome:
+- Identifies high-risk orders  
+- Enables proactive logistics decisions  
 
 ---
 
-## 📊 Key Business Insights
-- 🚚 Over **50% deliveries are delayed**
-- 💸 Delays cause significant financial loss
-- 📦 Shipping mode is a major bottleneck
-- 🌍 Certain regions consistently underperform
-- ⏱ Even small delays impact profitability
+## 📈 Key Business Insights
+- 🚚 **54.7% deliveries are delayed**
+- 💸 ~**2.1M $ loss due to delays**
+- 📦 Shipping mode is a major bottleneck  
+- 🌍 Regional inefficiencies exist  
+- ⏱ Even small delays reduce profit  
 
 ---
 
 ## 💡 Recommendations
-- Optimize shipping methods
-- Improve order processing workflows
-- Prioritize high-value delayed orders
-- Use ML model for early risk detection
-- Plan logistics based on seasonal trends
+- Optimize shipping strategies  
+- Improve order processing workflows  
+- Prioritize high-value delayed orders  
+- Use ML model for early risk detection  
+- Plan logistics for peak seasons  
 
 ---
 
-## 📈 Future Improvements
-- Deploy model using Flask / FastAPI
-- Build dashboard using Power BI / Tableau
-- Implement real-time prediction system
-- Use advanced ML models (XGBoost, LightGBM)
+## 📁 Project Structure
+```
+Supply-Chain-Analysis/
+│
+├── README.md
+├── supply_chain_analysis.ipynb
+├── DataCoSupplyChainDataset.csv
+└── images/
+    ├── profitability_pie.png
+    ├── delay_distribution.png
+    ├── profit_vs_delay.png
+    ├── bottleneck_analysis.png
+    ├── root_cause.png
+    └── time_analysis.png
+```
 
 ---
 
-## 📊 Visualizations
-- Delay distribution
-- Profit vs Delay analysis
-- Bottleneck detection charts
-- Time-based trends
+## ▶️ How to Run
+
+### Install dependencies
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn
+```
+
+### Run the notebook
+```bash
+jupyter notebook
+```
 
 ---
 
 ## 🧠 Learnings
-- End-to-end data analytics workflow
-- Business problem solving using data
-- Feature engineering techniques
-- Turning insights into actionable decisions
+- End-to-end data analysis workflow  
+- Real-world business problem solving  
+- Feature engineering techniques  
+- Converting insights into business decisions  
 
 ---
 
-## 🤝 Connect
-If you found this project helpful, feel free to connect or give a ⭐ to the repo!
-
----
+## ⭐ Support
+If you found this project useful, consider giving it a ⭐ on GitHub!
